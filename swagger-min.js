@@ -24,17 +24,24 @@ function getRefs(doc, path, verb) {
 
 function getObjectRefs(obj) {
     var refs = [];
-    for (var propertyName in obj) {
-        if (propertyName === '$ref') {
-            refs.push(obj[propertyName]);
-        }
-        if (isObject(obj[propertyName])) {
+    if (isObject(obj)) {
+        for (var propertyName in obj) {
+            if (propertyName === '$ref') {
+                refs.push(obj[propertyName]);
+            }
             var moreRefs = getObjectRefs(obj[propertyName]);
             for (var i = 0; i < moreRefs.length; i++) {
                 refs.push(moreRefs[i]);
             }
         }
-
+    }
+    if (Array.isArray(obj)) {
+        for (var i = 0; i < obj.length; i++) {
+            var moreRefs = getObjectRefs(obj[i]);
+            for (var j = 0; j < moreRefs.length; j++) {
+                refs.push(moreRefs[j]);
+            }
+        }
     }
     return refs;
 }
