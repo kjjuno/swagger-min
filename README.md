@@ -17,7 +17,7 @@ curl https://petstore.swagger.io/v2/swagger.json > swagger.json
 
 show relevant swagger for POST /pet
 ```
-swagger-min.js -f swagger.json -v post -r /pet
+swagger-min -f swagger.json -v post -r /pet
 ```
 
 ```yaml
