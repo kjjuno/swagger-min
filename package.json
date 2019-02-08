@@ -1,13 +1,13 @@
 {
   "name": "swagger-min",
   "version": "1.0.0",
-  "description": "",
+  "description": "Show only the parts of a swagger document that you are interested in",
   "main": "test.js",
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Kevin Johnson",
+  "license": "MIT",
   "dependencies": {
     "commander": "^2.19.0",
     "fs": "0.0.1-security",
@@ -18,5 +18,20 @@
   },
   "devDependencies": {
     "mocha": "^5.2.0"
-  }
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjjuno/swagger-min.git"
+  },
+  "keywords": [
+    "swagger"
+  ],
+  "bugs": {
+    "url": "https://github.com/kjjuno/swagger-min/issues"
+  },
+  "homepage": "https://github.com/kjjuno/swagger-min#readme"
 }
