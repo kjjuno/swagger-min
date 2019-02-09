@@ -14,7 +14,7 @@
     "js-yaml": "^3.12.1"
   },
   "bin": {
-    "swagger-min": "swagger-min.js"
+    "swagger-min": "swagger-min-cli.js"
   },
   "devDependencies": {
     "mocha": "^5.2.0"
