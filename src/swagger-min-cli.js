@@ -3,7 +3,7 @@
 program = require('commander');
 yaml    = require('js-yaml');
 fs      = require('fs');
-pkg     = require('./package.json');
+pkg     = require('../package.json');
 
 program
   .version(pkg.version)
