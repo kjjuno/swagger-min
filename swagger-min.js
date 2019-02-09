@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
 program = require('commander');
-yaml = require('js-yaml');
-fs   = require('fs');
+yaml    = require('js-yaml');
+fs      = require('fs');
+pkg     = require('./package.json');
 
 program
-    .version('1.0.0')
+    .version(pkg.version)
     .option('-f, --file [path]', 'The path to the swagger document')
     .option('-v, --verb [verb]', 'The verb that should be hit')
     .option('-r, --route [route]', 'The route')
