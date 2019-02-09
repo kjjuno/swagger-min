@@ -52,13 +52,16 @@ function appendRefs(obj, doc, refs) {
         var parts = ref.split('/');
         var docObj = doc;
         var curr = obj;
-        for (var i = 1; i < parts.length; i++) {
-            var section = parts[i];
+        for (var j = 1; j < parts.length; j++) {
+            var section = parts[j];
             curr[section] = curr[section] || {};
             docObj = docObj[section];
-            curr = curr[section];
+
+            if (j < parts.length - 1) {
+                curr = curr[section];
+            }
         }
-        curr[parts[parts.length - 2]] = docObj;
+        curr[section] = docObj;
 
         var childRefs = getObjectRefs(docObj);
         appendRefs(obj, doc, childRefs);
