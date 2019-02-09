@@ -89,10 +89,6 @@ try {
   var refs = getRefs(doc, program.route, program.verb);
   appendRefs(obj, doc, refs);
   console.log(yaml.safeDump(obj));
-  /*
-    var res = doc.definitions['ValidAddressResponse'];
-    obj.definitions['ValidAddressResponse'] = res;
-    */
 } catch (e) {
   console.log(e);
 }
