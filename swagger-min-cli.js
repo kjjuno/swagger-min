@@ -7,11 +7,15 @@ pkg     = require('./package.json');
 
 program
     .version(pkg.version)
-    .option('-f, --file [path]', 'The path to the swagger document')
-    .option('-v, --verb [verb]', 'The verb that should be hit')
-    .option('-r, --route [route]', 'The route')
+    .option('-f, --file [path]',   '[required] The path to the swagger document')
+    .option('-v, --verb [verb]',   '[required] The verb that should be hit')
+    .option('-r, --route [route]', '[required] The route')
 
 program.parse(process.argv);
+
+if (!program.file || !program.verb || !program.route) {
+    program.help();
+}
 
 function isObject(a) {
     return (!!a) && (a.constructor === Object);
