@@ -1,6 +1,6 @@
 {
   "name": "swagger-min",
-  "version": "0.1.0-alpha.5",
+  "version": "0.1.0-alpha.6",
   "description": "Show only the parts of a swagger document that you are interested in",
   "main": "test.js",
   "scripts": {
