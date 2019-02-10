@@ -5,7 +5,7 @@
   "main": "src/swagger-min-cli.js",
   "scripts": {
     "test": "nyc --reporter=html --reporter=text mocha",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcover && codecov"
   },
   "author": "Kevin Johnson",
   "license": "MIT",
@@ -20,7 +20,7 @@
     "swagger-min": "src/swagger-min-cli.js"
   },
   "devDependencies": {
-    "coveralls": "^3.0.2",
+    "codecov": "^3.1.0",
     "mocha": "^5.2.0"
   },
   "directories": {
