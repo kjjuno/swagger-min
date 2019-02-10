@@ -1,4 +1,4 @@
-# swagger-min [![CircleCI](https://circleci.com/gh/kjjuno/swagger-min.svg?style=shield)](https://circleci.com/gh/kjjuno/swagger-min) [![Documentation Status](https://readthedocs.org/projects/swagger-min/badge/?version=latest)](https://swagger-min.readthedocs.io/en/latest/?badge=latest)
+# swagger-min [![CircleCI](https://circleci.com/gh/kjjuno/swagger-min.svg?style=shield)](https://circleci.com/gh/kjjuno/swagger-min) [![Documentation Status](https://readthedocs.org/projects/swagger-min/badge/?version=latest)](https://swagger-min.readthedocs.io/en/latest/?badge=latest) ![Code Coverage](https://img.shields.io/codecov/c/github/kjjuno/swagger-min/codecov.svg?style=flat)
 
 [![npm version](https://badge.fury.io/js/swagger-min.svg)](https://badge.fury.io/js/swagger-min)
 
