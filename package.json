@@ -3,20 +3,27 @@
   "version": "0.1.0-alpha.6",
   "description": "Show only the parts of a swagger document that you are interested in",
   "main": "src/swagger-min-cli.js",
+  "nyc": {
+    "all": true
+  },
   "scripts": {
-    "test": "mocha"
+    "test": "nyc --reporter=html --reporter=text mocha",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcover && codecov"
   },
   "author": "Kevin Johnson",
   "license": "MIT",
   "dependencies": {
     "commander": "^2.19.0",
     "fs": "0.0.1-security",
-    "js-yaml": "^3.12.1"
+    "istanbul": "^0.4.5",
+    "js-yaml": "^3.12.1",
+    "nyc": "^13.2.0"
   },
   "bin": {
     "swagger-min": "src/swagger-min-cli.js"
   },
   "devDependencies": {
+    "codecov": "^3.1.0",
     "mocha": "^5.2.0"
   },
   "directories": {

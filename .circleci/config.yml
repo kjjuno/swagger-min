@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/repo
     docker:
-      - image: circleci/node:4.8.2
+      - image: circleci/node:10
     steps:
       - checkout
       - run:
@@ -21,3 +21,6 @@ jobs:
       - run:
           name: test
           command: npm test
+      - run:
+          name: coverage
+          command: npm run coverage

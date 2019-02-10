@@ -1,4 +1,7 @@
 node_modules/
 docs/_build/
+.nyc_output/
+coverage/
 *.swp
 *.tgz
+*.lcover
