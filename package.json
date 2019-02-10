@@ -4,19 +4,23 @@
   "description": "Show only the parts of a swagger document that you are interested in",
   "main": "src/swagger-min-cli.js",
   "scripts": {
-    "test": "mocha"
+    "test": "nyc --reporter=html --reporter=text mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": "Kevin Johnson",
   "license": "MIT",
   "dependencies": {
     "commander": "^2.19.0",
     "fs": "0.0.1-security",
-    "js-yaml": "^3.12.1"
+    "istanbul": "^0.4.5",
+    "js-yaml": "^3.12.1",
+    "nyc": "^13.2.0"
   },
   "bin": {
     "swagger-min": "src/swagger-min-cli.js"
   },
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "mocha": "^5.2.0"
   },
   "directories": {
