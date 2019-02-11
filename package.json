@@ -25,6 +25,7 @@
   "author": "Kevin Johnson",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "commander": "^2.19.0",
     "fs": "0.0.1-security",
     "istanbul": "^0.4.5",

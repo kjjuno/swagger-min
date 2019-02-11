@@ -1,20 +1,26 @@
-var assert = require('assert');
-var swagger = require('../src/swagger-min');
+const fs      = require('fs');
+const assert  = require('assert');
+const swagger = require('../src/swagger-min');
 
 describe('swagger-min', function() {
+  const file = 'test/petstore.json';
+
   describe('minify', function() {
     it('is null when route does not exist', function() {
-      var obj = swagger.minify('swagger.json', 'none', '/not-there');
+      var json = fs.readFileSync(file, 'utf8');
+      var obj = swagger.minify(json, 'none', '/not-there');
       assert.equal(null, obj);
     });
 
     it('is not null when route does exist', function() {
-      var obj = swagger.minify('swagger.json', 'post', '/pet');
+      var json = fs.readFileSync(file, 'utf8');
+      var obj = swagger.minify(json, 'post', '/pet');
       assert.notEqual(null, obj);
     });
 
     it('Finds min spec for POST /pet', function() {
-      var obj = swagger.minify('swagger.json', 'post', '/pet');
+      var json = fs.readFileSync(file, 'utf8');
+      var obj = swagger.minify(json, 'post', '/pet');
       assert.notEqual(null, obj.paths['/pet'].post, 'POST /pet not found');
       assert.equal(1, Object.keys(obj.paths).length, 'Should only have 1 route');
       assert.equal(1, Object.keys(obj.paths['/pet']).length, 'Should only have 1 verb');
