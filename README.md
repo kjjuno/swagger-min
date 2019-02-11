@@ -7,6 +7,10 @@
 [![npm version](https://badge.fury.io/js/swagger-min.svg)](https://badge.fury.io/js/swagger-min)
 [![npm downloads](https://img.shields.io/npm/dt/swagger-min.svg?style=flat)](https://badge.fury.io/js/swagger-min)
 
+[![Docker Hub](https://img.shields.io/docker/build/kjjuno/swagger-min.svg?style=flat)](https://hub.docker.com/r/kjjuno/swagger-min)
+[![](https://img.shields.io/microbadger/image-size/kjjuno/swagger-min.svg?style=flat)](https://hub.docker.com/r/kjjuno/swagger-min)
+[![](https://img.shields.io/docker/pulls/kjjuno/swagger-min.svg?style=flat)](https://hub.docker.com/r/kjjuno/swagger-min)
+
 Show only the parts of a swagger document that you are interested in
 
 install swagger-min from npm
