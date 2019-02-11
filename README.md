@@ -1,15 +1,28 @@
 # swagger-min
-[![CircleCI](https://circleci.com/gh/kjjuno/swagger-min.svg?style=shield)](https://circleci.com/gh/kjjuno/swagger-min)
-[![Documentation Status](https://readthedocs.org/projects/swagger-min/badge/?version=latest)](https://swagger-min.readthedocs.io/en/latest/?badge=latest)
-[![Code Coverage](https://img.shields.io/codecov/c/github/kjjuno/swagger-min/master.svg?style=flat)](https://codecov.io/gh/kjjuno/swagger-min)
-[![License MIT](https://img.shields.io/npm/l/swagger-min.svg?style=flat)](https://opensource.org/licenses/MIT)
 
-[![npm version](https://badge.fury.io/js/swagger-min.svg)](https://badge.fury.io/js/swagger-min)
-[![npm downloads](https://img.shields.io/npm/dt/swagger-min.svg?style=flat)](https://badge.fury.io/js/swagger-min)
+| Platform      | Badges                                                                                              |
+| :------------ | :-------------------------------------------------------------------------------------------------- |
+| License       | [![License MIT][license-badge]][mit-license]                                                        |
+| Circle CI     | [![CircleCI][circleci-build-badge]][circleci-dashboard]                                             |
+| Code Coverage | [![Code Coverage][codecov-badge]][codecov-dashboard]                                                |
+| Documantation | [![Documentation Status][rtd-build-badge]][rtd-latest]                                              |
+| NPM           | [![npm version][npm-version-badge]][npm-page] [![npm downloads][npm-downloads-badge]][npm-page]     |
+| Docker        | [![Docker Size][docker-size-badge]][docker-page] [![Docker Pulls][docker-pulls-badge]][docker-page] |
 
-[![Docker Hub](https://img.shields.io/docker/build/kjjuno/swagger-min.svg?style=flat)](https://hub.docker.com/r/kjjuno/swagger-min)
-[![](https://img.shields.io/microbadger/image-size/kjjuno/swagger-min.svg?style=flat)](https://hub.docker.com/r/kjjuno/swagger-min)
-[![](https://img.shields.io/docker/pulls/kjjuno/swagger-min.svg?style=flat)](https://hub.docker.com/r/kjjuno/swagger-min)
+[circleci-build-badge]: https://circleci.com/gh/kjjuno/swagger-min.svg?style=shield
+[circleci-dashboard]:   https://circleci.com/gh/kjjuno/swagger-min
+[rtd-build-badge]:      https://readthedocs.org/projects/swagger-min/badge/?version=latest
+[rtd-latest]:           https://swagger-min.readthedocs.io/en/latest/
+[codecov-badge]:        https://img.shields.io/codecov/c/github/kjjuno/swagger-min/master.svg?style=flat
+[codecov-dashboard]:    https://codecov.io/gh/kjjuno/swagger-min
+[license-badge]:        https://img.shields.io/npm/l/swagger-min.svg?style=flat
+[mit-license]:          https://opensource.org/licenses/MIT
+[npm-version-badge]:    https://badge.fury.io/js/swagger-min.svg
+[npm-downloads-badge]:  https://img.shields.io/npm/dt/swagger-min.svg?style=flat
+[npm-page]:             https://www.npmjs.com/package/swagger-min
+[docker-size-badge]:    https://img.shields.io/microbadger/image-size/kjjuno/swagger-min.svg?style=flat
+[docker-pulls-badge]:   https://img.shields.io/docker/pulls/kjjuno/swagger-min.svg?style=flat
+[docker-page]:          https://hub.docker.com/r/kjjuno/swagger-min
 
 Show only the parts of a swagger document that you are interested in
 
