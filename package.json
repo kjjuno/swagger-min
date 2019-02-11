@@ -7,7 +7,7 @@
     "all": true
   },
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha -R spec -R xunit -O output=test-results.xml",
+    "test": "nyc --reporter=html --reporter=text mocha -R spec -R xunit -O output=test-results/mocha/results.xml",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcover && codecov"
   },
   "author": "Kevin Johnson",
