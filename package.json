@@ -2,7 +2,7 @@
   "name": "swagger-min",
   "version": "0.1.0-beta.1",
   "description": "Show only the parts of a swagger document that you are interested in",
-  "main": "src/swagger-min-cli.js",
+  "main": "src/swagger-min.js",
   "nyc": {
     "all": true,
     "check-coverage": true,
