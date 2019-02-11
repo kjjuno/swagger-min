@@ -1,5 +1,4 @@
-yaml = require('js-yaml');
-fs   = require('fs');
+const yaml  = require('js-yaml');
 
 function isObject(a) {
   return (!!a) && (a.constructor === Object);
@@ -57,8 +56,8 @@ function appendRefs(obj, doc, refs) {
   }
 }
 
-function minify(file, verb, route) {
-  var doc = yaml.safeLoad(fs.readFileSync(file, 'utf8'));
+function minify(text, verb, route) {
+  var doc = yaml.safeLoad(text);
   if (!doc.paths[route] || !doc.paths[route][verb]) {
     return null;
   }
