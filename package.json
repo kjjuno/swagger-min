@@ -4,10 +4,22 @@
   "description": "Show only the parts of a swagger document that you are interested in",
   "main": "src/swagger-min-cli.js",
   "nyc": {
-    "all": true
+    "all": true,
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 99,
+    "statements": 99,
+    "functions": 99,
+    "branches": 99,
+    "include": [
+      "src/**/*.js"
+    ],
+    "exclude": [
+      "src/swagger-min-cli.js"
+    ]
   },
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha -R spec -R xunit -O output=test-results/mocha/results.xml",
+    "test": "nyc --reporter=html --reporter=text mocha -R xunit -O output=test-results/mocha/results.xml -R spec",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcover && codecov"
   },
   "author": "Kevin Johnson",
