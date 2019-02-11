@@ -24,3 +24,11 @@ jobs:
       - run:
           name: coverage
           command: npm run coverage
+      - store_artifacts:
+          path: test-results
+          prefix: test-results
+      - store_artifacts:
+          path: coverage
+          prefix: coverage
+      - store_test_results:
+          path: test-results
