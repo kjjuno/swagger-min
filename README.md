@@ -2,6 +2,7 @@
 [![CircleCI](https://circleci.com/gh/kjjuno/swagger-min.svg?style=shield)](https://circleci.com/gh/kjjuno/swagger-min)
 [![Documentation Status](https://readthedocs.org/projects/swagger-min/badge/?version=latest)](https://swagger-min.readthedocs.io/en/latest/?badge=latest)
 [![Code Coverage](https://img.shields.io/codecov/c/github/kjjuno/swagger-min/master.svg?style=flat)](https://codecov.io/gh/kjjuno/swagger-min)
+[![License MIT](https://img.shields.io/npm/l/swagger-min.svg?style=flat)](https://opensource.org/licenses/MIT)
 
 [![npm version](https://badge.fury.io/js/swagger-min.svg)](https://badge.fury.io/js/swagger-min)
 
