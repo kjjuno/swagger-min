@@ -2,6 +2,7 @@ node_modules/
 docs/_build/
 .nyc_output/
 coverage/
+test-results.xml
 *.swp
 *.tgz
 *.lcover
