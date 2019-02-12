@@ -31,7 +31,7 @@ install swagger-min from npm
 npm install -g swagger-min
 ```
 
-show relevant swagger for POST /pet from https://petstore.swagger.io/v2/swagger.json
+show relevant swagger for POST /pet from https://petstore.swagger.io
 ```
 swagger-min --file https://petstore.swagger.io/v2/swagger.json --verb post --route /pet
 ```
